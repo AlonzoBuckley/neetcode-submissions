@@ -1,10 +1,7 @@
 class Solution:
     def hasDuplicate(self, nums: List[int]) -> bool:
-        no_dublicates = set(nums)
-        
-        if sorted(list(no_dublicates)) == sorted(nums):
+        noduplicate = set(nums)
+        if sorted(nums) == sorted(list(noduplicate)):
             return False
         else:
             return True
-            
-        
